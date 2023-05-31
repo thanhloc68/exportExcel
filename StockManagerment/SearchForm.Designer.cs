@@ -43,6 +43,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSoldOut = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListDb)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -162,6 +163,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnSoldOut);
             this.groupBox2.Controls.Add(this.btnExport);
             this.groupBox2.Controls.Add(this.lbTongList);
             this.groupBox2.Controls.Add(this.label5);
@@ -199,6 +201,15 @@
             this.panel1.Size = new System.Drawing.Size(1618, 634);
             this.panel1.TabIndex = 1;
             // 
+            // btnSoldOut
+            // 
+            this.btnSoldOut.Location = new System.Drawing.Point(708, 76);
+            this.btnSoldOut.Name = "btnSoldOut";
+            this.btnSoldOut.Size = new System.Drawing.Size(94, 23);
+            this.btnSoldOut.TabIndex = 24;
+            this.btnSoldOut.Text = "Hạ Tồn";
+            this.btnSoldOut.UseVisualStyleBackColor = true;
+            // 
             // SearchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -235,5 +246,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnSoldOut;
     }
 }

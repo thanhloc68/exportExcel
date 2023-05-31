@@ -169,6 +169,10 @@ namespace StockManagerment
             {
                 //var listSearch = from p in dbcontext.tbShopeeInfos where p.SKUProduct.Contains(findmultitext[i]) select p;
                 var listSearch = dbcontext.tbShopeeInfos.Where(x=> x.SKUProduct.Contains(findmultitext[i])).ToList();
+                //foreach (var item in listSearch)
+                //{
+                //    item.Quantity = 0;
+                //}
                 listproductInStocks.AddRange(listSearch);
             }
             dgvListDb.DataSource = listproductInStocks;
